@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- el titulo lleva no mas de 55 caracteres -->
+  <title>curso 1 HTML</title>
+  <!-- la descripsion lleba no mas de 165 caracteres -->
+  <meta name="description" content="en esta pagina estoy escribiendo todos los conseptos del curso 1 de html">
+  <style>
+    h2 {
+      color: orangered;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/estilo.css">
+</head>
+
+<body>
+  <h2 id="inicio">CURSO DE HTML</h2>
+  <hr>
+
+  <h3>Temario del Curso</h3>
+  <ul>
+    <li><a href="index.htmL#conceptos">Conceptos Basicos</a></li>
+    <li><a href="index.htmL#metadata">Etiquetas Meta</a></li>
+    <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+    <li><a href="index.html#texto-basico">Etiquetas de Texto Basicas</a></li>
+    <li><a href="index.html#texto-semantico">Etiquetas de Texto Semanticas</a></li>
+    <li><a href="index.html#saltos">Etiquetas de Saltos</a></li>
+    <li><a href="index.html#etiquetas-formato">Etiquetas de Formato o Formateo</a></li>
+    <li><a href="index.html#estructurales">Etiquetas Semanticas Estructurales</a></li>
+    <li><a href="index.html#bloque-vs-linea">Etiquetas de Bloque VS Etiquetas de Linea</a></li>
+    <li><a href="index.html#estilocss">Estilos CSS en HTML</a></li>
+    <li><a href="index.html#scripts">Scripts en HTML</a></li>
+    <li><a href="index.html#imagenes">Imagenes</a></li>
+    <li><a href="index.html#svg">.SVG</a></li>
+    <li><a href="index.html#figuras">Figuras</a></li>
+    <li><a href="index.html#listaso">Listas Ordenadas</a></li>
+    <li><a href="index.html#listasd">Listas Desordenadas</a></li>
+    <li><a href="index.html#listasdef">Listas de Definicion</a></li>
+    <li><a href="index.html#tablass">Tablas</a></li>
+    <li><a href="index.html#enlaces">Enlaces</a></li>
+    <li><a href="index.html#enla2">Enlaces Hacia el Mismo Documento</a></li>
+    <li><a href="index.html#protocolosespeciales">Enlaces y Protocolos Especiales</a></li>
+    <li><a href="index.html#elementosinteractivos">Elementos Interactivos</a></li>
+    <li><a href="index.html#multimedia">Audio y Video</a></li>
+    <li><a href="index.html#iframes">Iframes</a></li>
+    <li><a href="index.html#elementos-formularios">Formularios y Sus Elementos</a></li>
+    <li><a href="index.html#accesivilidad">Accesivilidad Web</a></li>
+  </ul>
+  <hr>
+  <h2 id="conceptos">Conceptos Basicos</h2>
+  <h3>Software</h3>
+  <p>Navegador web (chrome o mozilla)</p>
+  <p>editor de codigo (Visual Studio Code)</p>
+  <h3>emmet.io</h3>
+  <p>emmet.io es una libreria de atajos incorporada a Visual Studio Code.</p>
+  <p>en el siguiente enlace se encuentra la lista de atajos disponibles con emmet <a
+      href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="nofolow">EMMET CHEAT SHEET</a></p>
+  <h3>Comentarios</h3>
+  <p>Un comentario es un texto escrito dentro del codigo que no tiene efecto sobre el documento HTML, sirve para dar
+    informacion sobre el codigo al desarrollador.
+    <br>
+    para escribir un comentario este debe estar escrito de la siguiente forma
+    <br>
+    &lt;!-- Aqui se escribe el comentario --&gt;
+  </p>
+  <h3>Short Cuts</h3>
+  <table>
+    <tr>
+      <td><b>!:</b></td>
+      <td>Genera la estructura basica del documento mediante EMMET</td>
+    </tr>
+    <tr>
+      <td><b>CTRL+I:</b></td>
+      <td>Muestra el autollenado</td>
+    </tr>
+    <tr>
+      <td><b>CTRL+}:</b></td>
+      <td>Convierte en comentario la linea en donde se encuentre el cursor</td>
+    </tr>
+    <tr>
+      <td><b>CTRL+Click:</b></td>
+      <td>Posiciona el cursor en varias posiciones a la vez para escribir lo mismo en varios lugares</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Link de Shortcuts</a></td>
+    </tr>
+  </table>
+  <h3>Etiquetas Estructurales</h3>
+  <table>
+    <tr>
+      <td><b>&lt;html lang="es"&gt;</b></td>
+      <td>Permite configurar en que idioma va a estar el sitio mediante el atributo <i>lang="<u>es</u>"</i></td>
+    </tr>
+    <tr>
+      <td><b>&lt;!DOCTYPE html&gt;</b></td>
+      <td>Esecifica que es un documento tipo html</td>
+    </tr>
+    <tr>
+      <td><b>&lt;head&gt;</b></td>
+      <td>Es donde se pone la informacion general del sitio como tutulo descripcion, metadatos, etc</td>
+    </tr>
+    <tr>
+      <td><b>&lt;body&gt;</b></td>
+      <td>Representa todo el contenido del documento</td>
+    </tr>
+  </table>
+  <h3>Caracteres Especiales</h3>
+  <table>
+    <tr>
+      <td>&amp;lt;</td>
+      <td>&lt;</td>
+      <td>&amp;amp;</td>
+      <td>&amp;</td>
+    </tr>
+    <tr>
+      <td>&amp;gt;</td>
+      <td>&gt;</td>
+      <td>&amp;quot;</td>
+      <td>&quot;</td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+    <tr>
+      <td>&amp;Aacute;</td>
+      <td>Á</td>
+      <td>&amp;Agrave;</td>
+      <td>À</td>
+    </tr>
+    <tr>
+      <td>&amp;Eacute;</td>
+      <td>É</td>
+      <td>&amp;Egrave;</td>
+      <td>È</td>
+    </tr>
+    <tr>
+      <td>&amp;Iacute;</td>
+      <td>Í</td>
+      <td>&amp;Igrave;</td>
+      <td>Ì</td>
+    </tr>
+    <tr>
+      <td>&amp;Oacute;</td>
+      <td>Ó</td>
+      <td>&amp;Ograve;</td>
+      <td>Ò</td>
+    </tr>
+    <tr>
+      <td>&amp;Uacute;</td>
+      <td>Ú</td>
+      <td>&amp;Ugrave;</td>
+      <td>Ù</td>
+    </tr>
+    <tr>
+      <td>&amp;aacute;</td>
+      <td>á</td>
+      <td>&amp;agrave;</td>
+      <td>à</td>
+    </tr>
+    <tr>
+      <td>&amp;eacute;</td>
+      <td>é</td>
+      <td>&amp;egrave;</td>
+      <td>è</td>
+    </tr>
+    <tr>
+      <td>&amp;iacute;</td>
+      <td>í</td>
+      <td>&amp;igrave;</td>
+      <td>ì</td>
+    </tr>
+    <tr>
+      <td>&amp;oacute;</td>
+      <td>ó</td>
+      <td>&amp;ograve;</td>
+      <td>ò</td>
+    </tr>
+    <tr>
+      <td>&amp;uacute;</td>
+      <td>ú</td>
+      <td>&amp;ugrave;</td>
+      <td>ù</td>
+    </tr>
+    <tr>
+      <td>&amp;Auml;</td>
+      <td>Ä</td>
+      <td>&amp;Acirc;</td>
+      <td>Â</td>
+    </tr>
+    <tr>
+      <td>&amp;Euml;</td>
+      <td>Ë</td>
+      <td>&amp;Ecirc;</td>
+      <td>Ê</td>
+    </tr>
+    <tr>
+      <td>&amp;Iuml;</td>
+      <td>Ï</td>
+      <td>&amp;Icirc;</td>
+      <td>Î</td>
+    </tr>
+    <tr>
+      <td>&amp;Ouml;</td>
+      <td>Ö</td>
+      <td>&amp;Ocirc;</td>
+      <td>Ô</td>
+    </tr>
+    <tr>
+      <td>&amp;Uuml;</td>
+      <td>Ü</td>
+      <td>&amp;Ucirc;</td>
+      <td>Û</td>
+    </tr>
+    <tr>
+      <td>&amp;auml;</td>
+      <td>ä</td>
+      <td>&amp;acirc;</td>
+      <td>â</td>
+    </tr>
+    <tr>
+      <td>&amp;euml;</td>
+      <td>ë</td>
+      <td>&amp;ecirc;</td>
+      <td>ê</td>
+    </tr>
+    <tr>
+      <td>&amp;iuml;</td>
+      <td>ï</td>
+      <td>&amp;icirc;</td>
+      <td>î</td>
+    </tr>
+    <tr>
+      <td>&amp;ouml;</td>
+      <td>ö</td>
+      <td>&amp;ocirc;</td>
+      <td>ô</td>
+    </tr>
+    <tr>
+      <td>&amp;uuml;</td>
+      <td>ü</td>
+      <td>&amp;ucirc;</td>
+      <td>û</td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+    <tr>
+    <tr>
+      <td>&amp;Atilde;</td>
+      <td>&Atilde;</td>
+      <td>&amp;aring;</td>
+      <td>&aring;</td>
+    </tr>
+    <tr>
+      <td>&amp;Ntilde;</td>
+      <td>&Ntilde;</td>
+      <td>&amp;Aring;</td>
+      <td>&Aring;</td>
+    </tr>
+    <tr>
+      <td>&amp;Otilde;</td>
+      <td>&Otilde;</td>
+      <td>&amp;Ccedil;</td>
+      <td>&Ccedil;</td>
+    </tr>
+    <tr>
+      <td>&amp;atilde;</td>
+      <td>&atilde;</td>
+      <td>&amp;ccedil;</td>
+      <td>&ccedil;</td>
+    </tr>
+    <tr>
+      <td>&amp;ntilde;</td>
+      <td>&ntilde;</td>
+      <td>&amp;Yacute;</td>
+      <td>&Yacute;</td>
+    </tr>
+    <tr>
+      <td>&amp;otilde;</td>
+      <td>&otilde;</td>
+      <td>&amp;yacute;</td>
+      <td>&yacute;</td>
+    </tr>
+    <tr>
+      <td>&amp;Oslash;</td>
+      <td>&Oslash;</td>
+      <td>&amp;yuml;</td>
+      <td>&yuml;</td>
+    </tr>
+    <tr>
+      <td>&amp;oslash;</td>
+      <td>&oslash;</td>
+      <td>&amp;THORN;</td>
+      <td>&THORN;</td>
+    </tr>
+    <tr>
+      <td>&amp;ETH;</td>
+      <td>&ETH;</td>
+      <td>&amp;thorn;</td>
+      <td>&thorn;</td>
+    </tr>
+    <tr>
+      <td>&amp;eth;</td>
+      <td>&eth;</td>
+      <td>&amp;AElig;</td>
+      <td>&AElig;</td>
+    </tr>
+    <tr>
+      <td>&amp;szlig;</td>
+      <td>&szlig;</td>
+      <td>&amp;aelig;</td>
+      <td>&aelig;</td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>&amp;frac14;</td>
+      <td>&frac14;</td>
+      <td>&amp;nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&amp;frac12;</td>
+      <td>&frac12;</td>
+      <td>&amp;iexcl;</td>
+      <td>&iexcl;</td>
+    </tr>
+    <tr>
+      <td>&amp;frac34;</td>
+      <td>&frac34;</td>
+      <td>&amp;pound;</td>
+      <td>&pound;</td>
+    </tr>
+    <tr>
+      <td>&amp;copy;</td>
+      <td>&copy;</td>
+      <td>&amp;yen;</td>
+      <td>&yen;</td>
+    </tr>
+    <tr>
+      <td>&amp;reg;</td>
+      <td>&reg;</td>
+      <td>&amp;sect;</td>
+      <td>&sect;</td>
+    </tr>
+    <tr>
+      <td>&amp;ordf;</td>
+      <td>&ordf;</td>
+      <td>&amp;curren;</td>
+      <td>&curren;</td>
+    </tr>
+    <tr>
+      <td>&amp;sup2;</td>
+      <td>&sup2;</td>
+      <td>&amp;brvbar;</td>
+      <td>&brvbar;</td>
+    </tr>
+    <tr>
+      <td>&amp;sup3;</td>
+      <td>&sup3;</td>
+      <td>&amp;laquo;</td>
+      <td>&laquo;</td>
+    </tr>
+    <tr>
+      <td>&amp;sup1;</td>
+      <td>&sup1;</td>
+      <td>&amp;not;</td>
+      <td>&not;</td>
+    </tr>
+    <tr>
+      <td>&amp;macr;</td>
+      <td>&macr;</td>
+      <td>&amp;shy;</td>
+      <td>&shy;</td>
+    </tr>
+    <tr>
+      <td>&amp;micro;</td>
+      <td>&micro;</td>
+      <td>&amp;ordm;</td>
+      <td>&ordm;</td>
+    </tr>
+    <tr>
+      <td>&amp;para;</td>
+      <td>&para;</td>
+      <td>&amp;acute;</td>
+      <td>&acute;</td>
+    </tr>
+    <tr>
+      <td>&amp;middot;</td>
+      <td>&middot;</td>
+      <td>&amp;uml;</td>
+      <td>&uml;</td>
+    </tr>
+    <tr>
+      <td>&amp;deg;</td>
+      <td>&deg;</td>
+      <td>&amp;plusmn;</td>
+      <td>&plusmn;</td>
+    </tr>
+    <tr>
+      <td>&amp;cedil;</td>
+      <td>&cedil;</td>
+      <td>&amp;raquo;</td>
+      <td>&raquo;</td>
+    </tr>
+    <tr>
+      <td>&amp;iquest;</td>
+      <td>&iquest;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>&amp;times;</td>
+      <td>&times;</td>
+      <td>&amp;cent;</td>
+      <td>&cent;</td>
+    </tr>
+    <tr>
+      <td>&amp;divide;</td>
+      <td>&divide;</td>
+      <td>&amp;euro;</td>
+      <td>&euro;</td>
+    </tr>
+    <tr>
+      <td>&amp;#147;</td>
+      <td>&#147;</td>
+      <td>&amp;#153;</td>
+      <td>&#153;</td>
+    </tr>
+    <tr>
+      <td>&amp;#148;</td>
+      <td>&#148;</td>
+      <td>&amp;#137;</td>
+      <td>&#137;</td>
+    </tr>
+    <tr>
+      <td>&amp;#140;</td>
+      <td>&#140;</td>
+      <td>&amp;#131;</td>
+      <td>&#131;</td>
+    </tr>
+    <tr>
+      <td>&amp;#135;</td>
+      <td>&#135;</td>
+      <td>&amp;#134;</td>
+      <td>&#134;</td>
+    </tr>
+  </table>
+  <h3>Enlaces de Documentacion</h3>
+  <ul type="square">
+    <li><a href="https://www.w3.org/html/">W3</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">DEVELOPER.MOZILLA</a></li>
+    <li><a href="https://htmlreference.io/">htmlreference</a></li>
+  </ul>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="metadata">Etiquetas Meta</h2>
+  <p>Las etiquetas meta son invisibles para el usuario final pero son de vital importancia para navegadores y motores de
+    busqueda ya que preveen la informacio general de la pagina</p>
+  <table>
+    <tr>
+      <thead><b>METAETIQUETAS BASICAS</b></thead>
+    </tr>
+    <tr>
+      <td><b>&lt;meta charset="UTF-8"&gt;</b></td>
+      <td>Hace que la pagina soporte todos los caracteres</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta http-equiv="X-UA-compatible" content="IE=edge"&gt;</b></td>
+      <td>Esta etiqueta no es necesaria, se usa para darle compatibilidad a internet explorer</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></td>
+      <td>Ajusta el ancho del contenido al ancho de la pagina</td>
+    </tr>
+    <tr>
+      <td><b>&lt;title&gt;</b></td>
+      <td>Es el titulo de la pagina, este titulo debe tener maximo 65 carateres</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta name="description" content="<i>contenido</i>"&gt;</b></td>
+      <td>Es donde se escribe la descripcion de la pagina</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <tr>
+      <thead><b>METAETIQUETAS PARA SEO</b></thead>
+    </tr>
+    <tr>
+      <td colspan="2">Son etiquetas para posicionamiento en buscadores</td>
+    </tr>
+    <tr>
+      <td><b>&lt;link rel="canonica" href="<u>URL canonica o principal</u>"&gt;</b></td>
+      <td>Permite informar a los buscadores cual es la pagina principal (no afectada por variables)</td>
+    </tr>
+    <tr>
+      <td><b>&lt;link rel="icon" href="<u>ruta hacia una imagen</u>"&gt;</b></td>
+      <td>Permite agregar una imagen como icono de la pagina, esta imagen debe ser cuadrada y en formato PNG</td>
+    </tr>
+    <tr>
+      <td><b>&lt;link rel="apple-touch-icon" href="<u>ruta hacia una imagen</u>"&gt;</td>
+      <td>Permite dar un icono a la pagina en caso de ser guardada en un dispositivo movil, esta imagen tambien debe ser
+        cuadrada y en formato PNG</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta name="theme-color" content="<u>color en valor hexadecimal</u>"&gt;</b></td>
+      <td>Permite cambiar el color de la barra de direcciones en dispositivos moviles</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <tr>
+      <thead><b>METAETIQUETAS PARA REDES SOCIALES</b></thead>
+    </tr>
+    <tr>
+      <td colspan="2">
+        -Dan la informacion a las redes sociales para crear tarjetas de enlace cuando la URL de mi sitio sea
+        compartida en ellas
+        <br>
+        -Cada red social tiene diferentes opciones para crear estas tarjetas, estas opciones se pueden buscar en la
+        seccion de desarrollador de cada red social
+        <br>
+        -La mayoria de las redes sociales usa el protocolo <b>opengraf</b> que son las que se explican a continuacion
+      </td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta property="og:title" content="<b><u><mark>titulo visible por el usuario</mark></u></b>"&gt;</b>
+      </td>
+      <td>Pone el titulo a la tarjeta</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta property="og:description" content="<b><u><mark>descripcion visible por el
+                usuario</mark></u></b>"&gt;</b></td>
+      <td>Pone descripcion a la tarjeta</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta property="og:image" content="<b><u><mark>URL donde esta la imagen en
+                internet</mark></u></b>"&gt;</b></td>
+      <td>Pone imagen a la tarjeta, no se debe usar la ruta a la carpeta local sino a la url donde esta la imagen, por
+        lo tanto, la pagina ya debe estra en un servidor en linea</td>
+    </tr>
+    <tr>
+      <td><b>&lt;meta property="og:url" content="<b><u><mark>URL a la pagina</mark></u></b>"&gt;</b></td>
+      <td>Garantiza que tarjeta lleve a la URL correcta</td>
+    </tr>
+
+  </table>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="encabezados">encabezados HTML</h2>
+  <p>Los encabezados son titulos con jerarquia desde el nivel 1 al nivel 6. para esto se usan las etiqutas de
+    &lt;h1&gt; a &lt;h6&gt;<br>
+    se debe tener en cuenta que solo puede haber un titulo de nivel 1 por documento. <br>
+    a continuacion se muestra un ejemplo de titulo por cada uno de los niveles</p>
+  <h1>encabezado de nivel 1</h1>
+  <h2>encabezado de nivel 2</h2>
+  <h3>encabezado de nivel 3</h3>
+  <h4>encabezado de nivel 4</h4>
+  <h5>encabezado de nivel 5</h5>
+  <h6>encabezado de nivel 6</h6>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="texto-basico">etiquetas de texto basicas</h2>
+  <table>
+    <tr>
+      <td><b>&lt;p&gt;</b></td>
+      <td></td>
+      <td>Parrafo: esta etiqueta permite crear un parrafo de texto, se recomienda no dejar texto suelto dentro del
+        codigo sindo dentro de esta etiqueta</td>
+    </tr>
+    <tr>
+      <td><b>&lt;b&gt;</b></td>
+      <td><b>Ejemplo</b></td>
+      <td>Negrita: pone la letra en negrita</td>
+    </tr>
+    <tr>
+      <td><b>&lt;i&gt;</b></td>
+      <td><i>Ejemplo</i></td>
+      <td>Cursiva: pone la letra en cursiva</td>
+    </tr>
+    <tr>
+      <td><b>&lt;u&gt;</b></td>
+      <td><u>Ejemplo</u></td>
+      <td>Subrayado: pone la letra subrayada</td>
+    </tr>
+    <tr>
+      <td><b>&lt;sup&gt;</b></td>
+      <td>e=mc<sup>2</sup></td>
+      <td>Superindice: genera uno o varios caracteres como superindice</td>
+    </tr>
+    <tr>
+      <td><b>&lt;sub&gt;</b></td>
+      <td>H<sub>2</sub>O</td>
+      <td>Subindice: genera uno o varios carateres como subindice</td>
+    </tr>
+    <tr>
+      <td><b>&lt;mark&gt;</b></td>
+      <td><mark>Ejemplo</mark></td>
+      <td>Resaltado: resalta el texto dentro de la etiqueta</td>
+    </tr>
+    <tr>
+      <td><b>&lt;small&gt;</b></td>
+      <td><small>Ejemplo</small></td>
+      <td>Small: genera texto con un tamaño de fuente mas pequeño al normal</td>
+    </tr>
+  </table>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="texto-semantico">etiquetas de texto semanticas</h2>
+  <table>
+    <tr>
+      <td><b>&lt;strong&gt;</b></td>
+      <td><strong>Ejemplo</strong></td>
+      <td>Strong: da importancia al texto (negrita)</td>
+    </tr>
+    <tr>
+      <td><b>&lt;em&gt;</b></td>
+      <td><em>Ejemplo</em></td>
+      <td>Em: da enfacis al texto (cursiva)</td>
+    </tr>
+    <tr>
+      <td><b>&lt;blockquote&gt;</b></td>
+      <td>
+        <blockquote>Ejemplo</blockquote>
+      </td>
+      <td>Blockquote: da espacio de tabulacion al texto</td>
+    </tr>
+    <tr>
+      <td><b>&lt;cite&gt;</b></td>
+      <td><cite>Ejemplo</cite></td>
+      <td>Cite: permite crer texto tipo cita bibliografica (cursiva)</td>
+    </tr>
+  </table>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="saltos">etiquetas de saltos</h2>
+  <table>
+    <tr>
+      <td><b>&lt;br&gt;</b></td>
+      <td>Genera un salto de linea</td>
+    </tr>
+    <tr>
+      <td><b>&lt;hr&gt;</b></td>
+      <td>crea una linea horizontal a modo de salto de contenido</td>
+    </tr>
+  </table>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="etiquetas-formato">etiquetas de formato o formateo</h2>
+  <table>
+    <tr>
+      <td><b>&lt;pre&gt;</b>
+        <br>
+        <b>&lt;code&gt;</b>
+      </td>
+      <td>
+        <p>
+        <pre>
+          Pre: permite crear texto conservando el formato dado como saltos linea.
+          el texto es creado en formato de codificacion
+          esta etiqueta debe ponerse dentro de una etiqueta &lt;p&gt;
+        </pre>
+        </p>
+      </td>
+    </tr>
+  </table>
+  <p>
+  <pre>
+      <code>
+        Import React from "react";
+        Import Tittle from "Tittle";
+
+        function App {
+          return &lt;Tittle /&gt;
+        }
+      </code>
+    </pre>
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="estructurales">etiquetas semanticas estructurales</h2>
+  <table>
+    <tr>
+      <td><b>&lt;div&gt;</b></td>
+      <td>Etiqueta generica de bloque, este bloque ocupa todo el ancho de la pagina</td>
+    </tr>
+    <tr>
+      <td><b>&lt;header&gt;</b></td>
+      <td>Cabezera del sitio o seccion</td>
+    </tr>
+    <tr>
+      <td><b>&lt;main&gt;</b></td>
+      <td>Define la seccion principal del documento, solo se puede tener 1 por documento</td>
+    </tr>
+    <tr>
+      <td><b>&lt;footer&gt;</b></td>
+      <td>Pie de pagina del sitio o seccion</td>
+    </tr>
+    <tr>
+      <td><b>&lt;nav&gt;</b></td>
+      <td>Define menu de navegacion o botonera</td>
+    </tr>
+    <tr>
+      <td><b>&lt;article&gt;</b></td>
+      <td>Genera una seccion de autocontenido es decir que se explica por si misma</td>
+    </tr>
+    <tr>
+      <td><b>&lt;aside&gt;</b></td>
+      <td>Representa contenido complementario</td>
+    </tr>
+    <tr>
+      <td><b>&lt;section&gt;</b></td>
+      <td>Genera una seccion de contenido generico</td>
+    </tr>
+    <tr>
+      <td><b>&lt;address&gt;</b></td>
+      <td>Representa una direccion fisica - informacion de contacto</td>
+    </tr>
+    <tr>
+      <td><b>&lt;span&gt;</b></td>
+      <td>Etiqueta generica de linea, esta etiqueta ocupa el tamaño del contenido y no genera salto de linea</td>
+    </tr>
+  </table>
+  <p>Dependiendo de la distribucion que se le quiera dar al sitio se pueden usar estas etiquetas.
+    <br>
+    A continuacion se muestran dos ejemplos de distribucion para sitios web con las etiquetas usadas.
+  </p>
+  <img src="img/nueva-estructura-html5.gif" alt="" width="450">
+  <img src="img/semantica-html.png" alt="">
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="bloque-vs-linea">etiquetas de bloque VS etiquetas de linea</h2>
+  <div style="background-color:yellow;">Una etiqueta de bloque permite definir bloques de contenido por texto o
+    imagenes, cada bloque se muestra separado del resto de bloques y este ocupa todo el espacio disponible designado
+    para el mismo.
+  </div>
+  <span style="background-color:greenyellow">Las etiquetas en línea son aquellas que modifican el texto para darle otro
+    aspecto, la etiqueta de linea por excelencia es la span, una etiqueta de linea solo ocupa el espacio de su contenido
+    y no genera salto de linea
+  </span>
+  <span style="background-color: blueviolet;">aqui se muestra otrotexto con etiqueta span</span>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="estilocss">estilos CSS en HTML</h2>
+  <p>
+    <b>&lt;style&gt;</b>
+    <br>
+    La etiqueta &lt;style&gt; sirve para dar estilo como color a secciones determinadas, sin embrgo, si esta etiqueta se
+    escribe en la seccion &lt;head&gt; del documento, da estilo a grupos de etiquetas escribiendolo de la siguiente
+    forma:
+    <br>
+  <pre>
+    &lt;style&gt;
+    h2 {
+    color: orangered;
+    }
+    &lt;/style&gt;
+    </pre>
+  <br>
+  La forma correcta de aplicar estilos es mediante CSS. Para esto se crea una nueva carpeta dentro del proyecto llamada
+  <i>assets</i> y en ella un archivo <i>estilos.css</i> alli se aplican todos los estilos al documento html.
+  <br>
+  <br>
+  Para enlazar la oja de estilos, en la seccion &lt;head&gt; usar la etiqueta &lt;link rel="stylesheet"
+  href="assets/estilo.css"&gt;
+  <br>
+  el atributo <i>rel</i> hace referencia al tipo de documento, <i>datasheet</i> representa hoja de estilos. <br>
+  el atributo <i>href</i> hace referencia a la ruta donde se encuentra el documento a importar
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="scripts">scripts en HTML</h2>
+  <p>
+    <b>&lt;script&gt;</b>
+    <br>
+    <br>
+    La etiqueta &lt;/script&gt; se usa para ejecutar programacion hecha en JavaScript. Esta programacion se hace en un
+    documento aparte.
+    <br>
+    <br>
+    Para crear este archivo, primero se debe crear una nueva cartpeta con el nombre <i>assets</i> y dentro de esta crear
+    un archivo con el nombre <i>codigos.js</i>
+    <br>
+    <br>
+    para importar un documento JS, se usa la etiqueta &lt;script src="assets/codigos.js"&gt; donde en el atributo
+    <i>src</i> se escribe la ruta donde esta el documento JS, y dentro de la etiqueta de apertura y cierra no se debe
+    poner nada.
+    <br>
+    <br>
+    es importante poner las etiquetas &lt;/script&gt; al final del documento html.
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="imagenes">imagenes</h2>
+  <p>
+    antes de insertar imagenes en el documento se debe crear una carpeta de recursos
+    <br>
+    Los formatos admitidos para imagenes son: JPG, PNG, GIF, SVG(vectores)
+    <br>
+    <br>
+    <b>&lt;img src="" alt=""&gt;</b>
+    <br>
+    En el atributo <i>src</i> se escibe la ruta de la imagen a utilizar
+    <br>en el atributo <i>alt</i> se escribe el titulo de la imagen, este titulo se mostrara en caso de que la imagen no
+    sea cargada.
+    <br>
+    para redimencionar la imagen se pueden usar los atributos <i>width=""</i> o <i>height=""</i> sin embargo la forma
+    correcta
+    de hacerlo es mediante la hoja de estilos CSS como se muestra a continuacion.
+    <br>
+  <pre>
+    img,
+    video {
+    max-width: 100%;
+    height: auto;
+    }
+    </pre>
+  esta estructura hace que el tamaño maximo de la imagen tenga la anchura de la ventana y el tamaño minimo sea el que
+  tiene la imagen por defecto en caso de este ser mas angosto que la ventana.
+  <br>
+  como se puede ver en el ejemplo esta misma estructura se usa para redimencionar videos.
+  </p>
+  <img src="img/mayra morado.jpg" alt="mayra con pelo morado" width="300">
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="svg">SVG</h2>
+  <p>
+    En caso de tener imagens vectoriales, estas pueden ser cargadas como imagen o como codigo.
+    <br>
+    para cargarla como imagen se hace igual que una imagen de otro fromato.
+    <br>
+    para cargarla como codigo se debe abrir la imagen con Visual Studio Code y copiar todo el codigo desde la etiqueta
+    de apertura de &lt;svg&gt; hasta su etiqueta de cierre. luego se pega ese codigo en el documento a trabajar.
+    <br>
+    <br>
+    A continuacion se muestra un ejemplo de una imagen vectorial importada como imagen y otra importada como codigo.
+    (para ver la codificacion del vector se debe ver desde el editor Visual Studio Code o desde la seccion de inspeccion
+    del navegador )
+  </p>
+  <img src="img/logo.svg" alt="">
+  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="0 0 450 450" style="enable-background:new 0 0 450 450;" xml:space="preserve">
+    <style type="text/css">
+      .st0 {
+        fill: #498D91;
+      }
+
+      .st1 {
+        fill: #448C91;
+      }
+    </style>
+    <path class="st0" d="M15,246.2c-0.2-2.6,0.6-5.3,2.4-7.9c2.9-4.1,7.6-7,14.1-8.8c3.2-0.9,7.1-1.5,11.6-1.9c4.5-0.4,9.7-0.6,15.5-0.5
+	c14.3,0.2,28.6,1.3,42.9,3.3c6.5,1.2,10.1,1.7,10.8,1.6c0.1,0,0.1,0,0.1,0c0,0,0.3-1,0.8-2.9c0.5-1.9,1.1-4.2,1.8-7
+	c1.7-6,2.4-10.4,2.2-13.1c0-0.1-0.1-0.9-0.3-2.3c-0.2-1.4-1.6-3.2-4.2-5.5c-1-0.8-1.5-1.4-1.6-1.9c0-0.4,0.2-0.9,0.8-1.5
+	c0.5-0.7,0.9-1.1,1.3-1.1c0.4,0,1.3,0.5,2.6,1.5c1.9,1.4,3.5,3.3,4.8,5.7c1.3,2.4,2.1,4.9,2.3,7.4c0.2,2.1-0.2,6.4-1.2,13
+	c-0.7,4.6-1,7.6-0.8,8.9c0,0.2,0,0.3,0.1,0.3c1.4,0.6,3.2,1.2,5.4,1.6c1.3,0.4,2.9,0.9,4.7,1.5c4.7,1.6,7.6,2.9,8.7,3.8
+	c0.6,0.6,1,1.5,1.1,2.8c0.1,1.1,0,1.9-0.3,2.3c-0.3,0.4-0.9,0.7-1.9,0.9c-1.9,0.2-5-0.1-9.3-0.8c-1.9-0.4-3.6-0.7-5.2-0.9
+	c-1.6-0.2-2.5-0.3-2.9-0.2c-0.6,0.1-0.9,1.1-0.7,3.3c0.1,1.2,0.3,2.9,0.7,5.2c1.8,10.9,4.7,20,8.9,27.2c1.7,3,2.5,5.2,2.7,6.7
+	c0.1,1-0.2,1.5-0.8,1.6c-0.7,0.1-2.1-0.8-3.9-2.6c-3.6-3.6-6.7-8.5-9.5-14.7c-2.7-6.2-4.6-12.9-5.8-20.1l-1.3-8.4L99,241.4
+	c-15.7-1.5-29.9-2.3-42.7-2.4c-6.5,0-12,0.2-16.5,0.6c-4.4,0.4-7.8,1-10.3,1.8c-4.7,1.5-6.9,3.4-6.8,5.6c0,0.4,0.5,1.5,1.4,3.1
+	c0.9,1.6,6,4.7,15.2,9.2c5,2.6,7.6,4.5,7.7,5.7c0,0.5-0.4,0.8-1.4,0.9c-0.6,0.1-2.4-0.5-5.5-1.6c-7.6-2.8-13.4-5.4-17.5-7.6
+	C17.9,253.9,15.3,250.4,15,246.2" />
+    <path class="st0" d="M34.1,315.5c-0.2-0.5-0.3-1.3-0.4-2.3c-0.1-1,0-2,0.2-3c0.2-1,0.7-2.1,1.4-3.4c0.7-1.3,1.6-2.5,2.5-3.6
+	c1.2-1.4,2.6-2.6,4.1-3.4c1.5-0.9,4.1-2.1,7.8-3.5l8.5-3.4l-3.2-0.7c-6.8-1.1-11.9-2.1-15.5-2.9c-3.6-0.8-6.1-1.7-7.5-2.5
+	c-1.4-0.9-2.4-2-2.9-3.3c-0.7-1.8-0.6-3.6,0.5-5.4c1.8-3,5.2-5.5,10-7.4c0.9-0.4,2.3-0.8,4.2-1.5c1.9-0.6,4.4-1,7.4-1
+	c3-0.1,5.8,0.4,8.4,1.3c4,1.7,6.6,3.9,7.8,6.8c0.1,0.3,0.5,1.5,1,3.4c0.5,1.9-0.8,4.4-3.9,7.3l-2.8,2.1l7.2,1.5
+	c2.8,0.6,4.7,1.1,5.8,1.7c0.9,0.4,1.5,1,1.7,1.5c0.2,0.5,0.2,1,0.2,1.4c-0.1,0.6-1.2,1.3-3.2,2.3c-1.7,0.8-6,2.6-12.8,5.3
+	c-9.4,3.8-14.7,6.1-16.2,7c-1.1,0.6-1.8,1.3-2.2,1.9c-0.9,1.2-1.2,2.2-1,2.9c0.2,0.5,0.6,1,1.3,1.7c1.6,1.7,4.2,3.3,7.8,4.7
+	c3.7,1.4,7.6,2.3,11.7,2.8c4.9,0.6,7.6,1.5,8.1,2.6c0.2,0.5-0.2,0.9-1.1,1.2c-0.8,0.3-2.5,0.4-5.3,0.2c-2.8-0.1-5.7-0.4-8.8-0.9
+	c-3.1-0.4-5.6-0.9-7.7-1.5c-3-0.9-5.7-2.3-8.2-4.1C36.5,319.3,34.9,317.4,34.1,315.5 M36,282.6c0,0,0.2,0.2,0.5,0.6
+	c0.3,0.4,3.7,1.2,10.3,2.6c5.5,1.3,8.6,1.7,9.4,1.4c0.8-0.3,1.5-0.9,2.1-1.8c1.2-1.8,1.6-3.2,1.1-4.4c-0.5-1.2-2.8-1.8-7-1.9
+	c-3.5-0.1-7,0.3-10.4,1c-2.1,0.4-3.7,0.9-4.7,1.3C36.3,281.8,35.9,282.2,36,282.6" />
+    <path class="st0" d="M64.8,369.3c-1-1-1.8-2-2.4-3c-0.6-1-1.2-2.5-1.7-4.7c-1.3-5-0.7-10.8,1.6-17.3c0.6-1.6,1.4-3.1,2.3-4.5
+	c1-1.3,2.7-3.2,5.2-5.5c2.6-2.4,4.5-4.1,5.8-5c1.3-0.9,2.9-1.6,4.7-2.1c5.4-1.5,10.1-1.5,13.9,0.1c1.6,0.7,3,1.6,4.1,2.8
+	c1.5,1.5,2.4,3.5,2.9,5.8c0.2,1.4-0.1,3-0.8,4.7c-0.8,1.9-1.9,3.5-3.2,4.7c-1.1,1-2.1,1.6-3.1,1.6c-1,0-1.7-0.2-2.2-0.6
+	c-0.8-0.8-0.7-2.5,0.4-4.9c0.9-2.5,0.8-4.2-0.2-5.3c-0.7-0.8-2-1.1-3.7-1.1c-4.8,0.2-9.2,2.3-13.3,6.1c-3.5,3.3-5.8,7.4-6.9,12.1
+	c-1.3,5.8-0.1,10.7,3.6,14.6c2.4,2.5,5.9,4.6,10.4,6.4c9.6,3.3,18.8,4.3,27.4,2.9c4.6-0.8,7.2-0.8,8-0.1c0.2,0.2,0.2,0.5-0.1,0.8
+	c-0.5,0.5-1.9,1.1-4.2,1.9c-5,1.5-10.7,2.1-17.1,1.8c-6.4-0.3-12.6-1.4-18.6-3.5c-2.4-0.9-4.4-1.8-5.9-2.8
+	C69.7,374,67.4,372.1,64.8,369.3" />
+    <path class="st0" d="M147.1,423.5c-0.5-0.2-1.1-0.7-1.9-1.4c-0.8-0.7-1.4-1.5-1.9-2.3c-0.5-0.8-1-2-1.3-3.4
+	c-0.4-1.4-0.6-2.9-0.7-4.3c-0.1-1.9,0.1-3.7,0.6-5.3c0.5-1.7,1.6-4.3,3.2-8l3.8-8.3l-2.8,1.7c-5.7,3.8-10.1,6.7-13.3,8.6
+	c-3.2,1.9-5.5,3-7.2,3.3c-1.6,0.3-3.1,0.2-4.4-0.4c-1.8-0.8-2.9-2.3-3.3-4.3c-0.8-3.5-0.1-7.6,2.1-12.3c0.4-0.9,1.1-2.2,2.1-4
+	c1-1.8,2.5-3.7,4.7-5.9c2.1-2.1,4.5-3.7,7-4.8c4-1.6,7.5-1.7,10.3-0.4c0.3,0.2,1.4,0.7,3.1,1.8c1.7,1,2.4,3.7,2.2,8l-0.6,3.5
+	l6.3-3.9c2.4-1.5,4.2-2.4,5.3-2.8c1-0.3,1.7-0.3,2.3-0.1c0.5,0.3,0.8,0.5,1.1,0.9c0.3,0.5,0.1,1.8-0.7,3.9c-0.7,1.8-2.6,6-5.6,12.7
+	c-4.2,9.2-6.5,14.6-6.9,16.2c-0.3,1.2-0.4,2.2-0.3,2.9c0.2,1.5,0.6,2.4,1.3,2.7c0.5,0.2,1.2,0.3,2.1,0.3c2.3,0.2,5.3-0.5,8.9-2
+	c3.6-1.5,7.1-3.5,10.4-6c4-2.9,6.5-4.2,7.6-3.7c0.4,0.2,0.5,0.8,0,1.7c-0.3,0.7-1.6,2-3.7,3.8c-2.1,1.8-4.4,3.6-6.9,5.4
+	c-2.5,1.8-4.7,3.2-6.6,4.2c-2.8,1.4-5.7,2.3-8.8,2.7C151.5,424.6,149,424.3,147.1,423.5 M125.8,398.3c0,0,0.3,0.1,0.8,0.1
+	c0.5,0.1,3.6-1.7,9.2-5.2c4.8-2.8,7.4-4.7,7.8-5.4c0.4-0.8,0.4-1.7,0.3-2.8c-0.3-2.1-1.1-3.4-2.2-4c-1.2-0.5-3.3,0.6-6.4,3.4
+	c-2.6,2.4-4.8,5-6.9,7.9c-1.2,1.8-2.1,3.2-2.5,4.1C125.5,397.5,125.4,398.1,125.8,398.3" />
+    <path class="st0" d="M225.2,442.6c-1.9-0.1-3.8-1.2-5.5-3.2c-0.7-0.8-1.4-1.9-2.1-3.3c-0.7-1.4-1.2-2.7-1.5-4.1
+	c-0.6-3-0.8-7-0.5-11.9c0.1-1.5,0.3-4.4,0.8-8.7c0.4-4.4,1.5-9.5,3.4-15.5l0.1-0.4c0-0.1,0-0.2-0.2-0.2c-0.3,0-1.3,0.7-2.8,2.3
+	c-2.3,2.3-5.1,6.3-8.3,11.8c-3.2,5.5-6,11.1-8.3,16.6c-1.9,4.5-3.5,7.5-4.7,9.1c-1,1.3-2.2,1.9-3.4,1.8c-2.9-0.2-5-3.2-6.1-9.1
+	c-0.8-4.1-1-9.1-0.6-15.2c0.1-2,0.3-4.2,0.5-6.5c1.3-13.3,3.9-20.5,7.8-21.6c0.7-0.2,1.3-0.3,1.8-0.2c2,0.1,2.9,1.8,2.7,5
+	c0,0.9-0.2,1.8-0.4,2.8c-1.8,11-2.8,19.4-3.1,25.2c-0.1,2.1-0.1,3.8-0.1,5.3l0.4,4.8l4.1-8.9c2.9-5.9,6-11.3,9.2-16.1
+	c3.2-4.8,6.3-8.5,9.2-11.1c1.8-1.7,3.2-2.8,4.2-3.3c0.5-0.2,1-0.3,1.5-0.3c0.4,0,0.7,0.1,1.1,0.3c1.4,0.3,2.3,1,2.9,2.3
+	c0.6,1.3,0.7,4.5,0.4,9.7c-0.2,3.1-0.5,7.2-0.9,12.3c-0.3,4.2-0.6,7.8-0.7,10.8c-0.1,1.8-0.2,3.9-0.2,6.3c-0.1,4.1,0.5,6.1,1.8,6.2
+	c2.2,0.1,7.1-5.5,14.6-17c2.3-3.6,4.1-5.9,5.3-6.9c0.7-0.5,1.3-0.8,1.8-0.7c0.5,0,0.9,0.3,1.3,0.8c0.3,0.3,0.5,0.7,0.4,1.1
+	c0,0.4-0.2,0.9-0.6,1.4c-0.4,0.5-1.3,1.8-2.7,4c-1.4,2.1-3,4.6-4.7,7.3c-5.4,8.5-9.9,13.8-13.5,15.9
+	C228,442.3,226.5,442.7,225.2,442.6" />
+    <path class="st0" d="M302.7,424.1c-0.5,0.2-1.3,0.3-2.3,0.3c-1,0-2-0.1-3-0.3c-1-0.2-2.1-0.8-3.3-1.6c-1.2-0.8-2.4-1.7-3.5-2.7
+	c-1.4-1.3-2.4-2.8-3.2-4.3c-0.8-1.6-1.8-4.2-3.1-8l-2.9-8.6l-0.9,3.2c-1.5,6.7-2.8,11.8-3.8,15.3c-1,3.5-2,6-2.9,7.3
+	c-0.9,1.4-2.1,2.3-3.5,2.8c-1.9,0.6-3.7,0.4-5.4-0.8c-2.9-2-5.2-5.5-6.9-10.4c-0.3-0.9-0.7-2.4-1.2-4.3c-0.5-2-0.7-4.4-0.7-7.5
+	c0.1-3,0.7-5.8,1.8-8.3c1.9-3.9,4.3-6.4,7.2-7.4c0.4-0.1,1.5-0.4,3.4-0.8c1.9-0.4,4.3,1,7.1,4.3l2,2.9l1.9-7.2
+	c0.7-2.7,1.4-4.6,2-5.7c0.5-0.9,1-1.4,1.6-1.6c0.5-0.1,1-0.2,1.4-0.1c0.6,0.2,1.3,1.3,2.1,3.4c0.7,1.8,2.3,6.1,4.6,13.1
+	c3.3,9.5,5.3,15,6.1,16.5c0.6,1.1,1.2,1.9,1.8,2.3c1.2,1,2.1,1.3,2.8,1.1c0.5-0.2,1.1-0.6,1.7-1.2c1.8-1.5,3.5-4,5.1-7.6
+	c1.6-3.6,2.7-7.4,3.4-11.5c0.9-4.9,1.9-7.5,3-7.9c0.5-0.2,0.9,0.2,1.2,1.2c0.3,0.8,0.3,2.5,0,5.3c-0.3,2.7-0.7,5.6-1.3,8.7
+	c-0.6,3.1-1.2,5.6-1.9,7.6c-1,3-2.6,5.6-4.6,8C306.6,421.9,304.7,423.5,302.7,424.1 M269.9,420.5c0,0,0.3-0.2,0.6-0.5
+	c0.4-0.3,1.4-3.7,3.1-10.1c1.6-5.4,2.2-8.5,1.9-9.3c-0.3-0.8-0.8-1.5-1.7-2.2c-1.7-1.3-3.1-1.8-4.3-1.4c-1.2,0.4-2,2.7-2.3,6.9
+	c-0.2,3.5-0.1,7,0.4,10.4c0.3,2.1,0.7,3.7,1,4.7C269.2,420.1,269.5,420.6,269.9,420.5" />
+    <path class="st0" d="M308.3,354.6c-0.7,0.5-1.5,0.7-2.5,0.6c-1.1-0.3-1.9-0.9-2.7-1.9c-0.1-0.2-0.4-0.6-0.8-1.3
+	c-0.5-0.7-0.7-1.9-0.8-3.4c-0.1-1.5,0.3-2.6,1.3-3.3c0.6-0.5,1.7-0.4,3.3,0.1c1.5,0.5,2.7,1.2,3.4,2.2c0.8,1.1,1,2.2,0.9,3.4
+	C310,352.6,309.3,353.8,308.3,354.6 M347.9,400.4c-0.9,0.6-2.5,1.3-4.8,1.9c-5,1.5-9.8,0.6-14.5-2.6c-1.4-0.8-2.8-2.2-4.4-4
+	c-1.5-1.8-3.8-4.8-6.7-8.9c-4.9-6.9-7.9-12.1-9-15.7c-1.1-3.5-0.5-6.1,1.8-7.8c1.2-0.9,2.3-1.3,3.1-1.2c0.8,0.1,1.7,0.8,2.6,2
+	c1.1,1.5,2.4,3.9,4,7.4c2.8,5.8,5.6,10.5,8.1,14.1c5.9,8.3,11.1,11,15.5,7.8c1.4-1,2.4-3.6,2.9-7.8c0.5-4.2,0.3-8.5-0.5-12.9
+	c-0.8-4.7-0.7-7.3,0.2-8c0.8-0.6,1.6-0.4,2.3,0.7c1.1,1.6,2.1,5,3,10.4c1.6,9.9,1.2,17.1-1.2,21.6
+	C349.6,398.8,348.7,399.8,347.9,400.4" />
+    <path class="st0" d="M406.6,363.9c-0.9,1.2-2.5,2-4.7,2.2c-1.4,0.2-2.9-0.1-4.5-0.9c-1.1-0.5-2.5-1.4-4.2-2.7l-2.5-1.9
+	c-2.9-2.7-8.3-10.1-16.3-22.2l-0.6-1c-1.3-2.3-2.4-3.8-3.1-4.3c-0.5-0.3-0.8-0.3-1.1,0c-0.7,0.9-1.4,4.1-2.3,9.7
+	c-0.1,0.4-0.2,0.8-0.2,1.3c-1.3,7.8-2.8,13-4.6,15.4c-0.8,1.1-1.7,1.9-2.7,2.4c-2.1,1.2-4.1,1.7-5.9,1.4c-1.8-0.3-4-1.3-6.4-3.1
+	c-2.4-1.8-4.3-3.8-5.8-6.2c-2.6-4.1-2.7-7.7-0.5-10.7c0.2-0.3,0.8-0.9,1.6-1.7c0.8-0.8,2-1.2,3.7-1.1c0.9,0.1,1.6,0.3,2.1,0.7
+	c0.5,0.4,1.1,1,1.7,1.9c0.6,0.9,1.4,2.2,2.5,4c1.1,1.8,2,3.3,2.9,4.6c0.9,1.3,1.4,2,1.6,2.1c0.4,0.3,0.9,0,1.5-0.8
+	c1.6-2.2,3.1-5.8,4.4-11c1.1-4.4,1.9-7.6,2.6-9.9c0.7-2.5,1.4-4.1,2-4.9c1.6-2.2,4.3-1.9,8,0.8c0.1,0,0.8,0.6,2.3,1.8
+	c1.5,1.1,4.6,4.5,9.5,10l11.6,13.5l-0.6-3l-3.6-14c-1.3-5.7-2.4-11.3-3.1-16.6c-0.7-5.3-0.9-9.3-0.5-11.9c0.3-1,0.7-1.9,1.2-2.6
+	c0.2-0.3,0.5-0.6,0.8-0.8c1-0.6,2-0.6,2.9,0.1c1.1,0.8,1.3,2,0.5,3.3c-1,2.4-0.7,7.5,0.8,15.4c1.5,7.9,3.9,16.6,7.3,26
+	c2.3,6.1,3.2,10.4,2.8,12.8C407.3,362.6,407,363.3,406.6,363.9" />
+    <path class="st0" d="M429.9,285.8c-1.5,6.1-5.1,10.7-10.9,13.9c-3.4,1.9-7,2.9-10.6,3.1c-2.6,0-5.5-0.4-8.8-1.2
+	c-0.4-0.1-1.6-0.4-3.7-1c-2.1-0.6-4.1-1.5-6-2.8c-3.6-2.7-6.1-5.8-7.6-9.2c-1.5-3.5-1.8-7-0.9-10.7c0.6-2.6,1.9-4.6,3.9-6
+	c2-1.4,4.1-1.9,6.3-1.3c2.8,0.7,5.7,2.8,8.8,6.3c3.1,3.5,5.3,7.3,6.6,11.3c0.7,2.2,1.7,3.5,3,3.8c1,0.2,2.5,0,4.5-0.7
+	c2.9-0.9,5.1-2.2,6.5-4.1c1.1-1.5,2-3.5,2.7-6.2c1.6-6.5,1.1-13.7-1.4-21.6c-2.2-6.8-5.7-12.7-10.4-17.8c-0.9-0.9-1.3-1.6-1.2-2.1
+	c0.1-0.3,0.3-0.6,0.8-0.8c0.2-0.1,0.5-0.1,0.8,0c0.9,0.2,2.3,1.4,4.2,3.5c1.9,2.1,4.1,5.5,6.7,10.2c4.2,7.6,6.6,15.1,7.4,22.3
+	C430.9,278.7,430.7,282.4,429.9,285.8 M402.7,290.3c0.1-0.2-0.1-0.9-0.6-2c-0.4-1.1-1.1-2.3-1.8-3.5c-1.4-2.6-2.8-4.8-4.5-6.4
+	c-1.6-1.6-3.1-2.6-4.4-2.9c-1.3-0.3-2.1,0.3-2.5,1.8c-0.2,0.9,0.1,2.1,1.1,3.7c1.6,2.7,4.1,5.1,7.5,7.2c2,1.3,3.5,2,4.5,2.2
+	C402.4,290.5,402.7,290.5,402.7,290.3" />
+    <path class="st1" d="M104.3,104.6c79.4-43.3,183.8-56.1,273.7,18.2c-15.3-29-96.9-62.7-150.1-61.5c-59.7,1.3-113.2,17.1-158.6,55
+	c1.3-3.1,1.8-6.9,4.2-9.2c17.4-16.1,34.8-32.2,52.8-47.8c23.2-20.1,50.4-34.7,83.6-44.3c-3.7,6.1-6.3,10.4-8.9,14.7
+	c13.4-8.9,25.7-19.7,44.3-15c15.9,4,31.6,8.7,49.8,13.8c-6.1,3.3-9.5,5.1-12.8,6.9c24.7-0.2,47.8,3.1,70,15.1
+	c-8.4,1.4-15.6,2.6-22.8,3.8c27.8,5.9,51.7,15.8,69.8,33.7c-14.8-4.2-30.3-8.6-45.7-13c-0.1,0.6-0.2,1.2-0.3,1.7
+	c11.6,7.1,25.5,12.5,34.5,21.6c31.2,31.8,47.3,69.8,46.3,112.3c-0.3,13.9-7.2,27.8-11.2,42.1c-12.4-5.7-18.3-13.4-18.9-25.9
+	c-1.4-26.2-10-50.5-26.8-71.3c5.9,19.6,12,39.8,18,60c-15.6-4.6-20.8-9.9-26.9-24.3c-6.4-15.3-11.9-31-18.8-46.1
+	c-2.9-6.4-8.2-12-13.4-17.1c9.5,23.8,19,47.5,28.8,72.1c-22.9-3.8-44-22.3-52.9-43.4c-5.9-14-13.1-27.5-20.3-41.1
+	c-2.2-4.2-6.3-7.5-10.6-12.6c2.4,11.3,4.4,20.7,6.9,32.3c-9.4-5.4-15.7-10.2-23-13c-7.1-2.7-15.5-5.3-22.9-4.4
+	c-16.4,2.1-25.6-4.5-32.5-15.8c-2.2-3.6-4.5-7.3-7.8-12.7c-1.5,7.2-2.8,12.8-3.9,18.4c-1.2,5.7-4.4,9.5-11.5,7.6
+	c-20.8-5.8-42-6.6-63.7-4.8C117.3,111,111.9,107.3,104.3,104.6" />
+    <path class="st0" d="M88.3,101.8c-6.4,4.4-12.3,9.8-17.1,16c-4.9,6.2-8.7,13.2-11.2,20.7c-2.5,7.5-3.5,15.6-2.7,23.5
+	c0.8,7.9,3.5,15.8,8.1,22.5c-5-6.4-8.3-14.2-9.6-22.3c-1.3-8.1-0.8-16.6,1.3-24.6c2.1-8,5.7-15.7,10.5-22.5
+	c4.7-6.9,10.6-13,17.2-18.2L88.3,101.8z" />
+  </svg>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="figuras">figuras</h2>
+  <p>
+    <b>&lt;figure&gt;</b>
+    <br>
+    <br>
+    Esta etiquta se usa para darle sentido semantico a una imagen, dentro de esta etiqueta se pone una etiqueta de
+    imagen y tambien se le puede poner un pie de foto con la etiqueta &lt;figcaption&gt;.
+  </p>
+  <figure>
+    <img src="img/ejercicio1.jpg" alt="montaña cafe" width="450">
+    <i>
+      <small>
+        <figcaption>ejercicio 1 de photoshop donde se pone una montaña dentro de una taza de cafe</figcaption>
+      </small>
+    </i>
+  </figure>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="listaso">listas ordenadas</h2>
+  <p>
+    <b>&lt;ol&gt;</b> Crea una lista cuyos items esta definidos por numeracion
+    <br>
+    <br>
+    <b>&lt;li&gt;</b> Crea un item para la lista, si no se usa esta etiqueta no se organizara el texto como item.
+    <br>
+    <br>
+    Con el atributo <i>start</i> se puede definir el numero inicial de la lista en caso de que no se desee que esta
+    incie en 1.
+    <br>
+    Con el atributo <i>reserved</i> se puede invertir el orden de la numeracion
+    <br>
+    El atributo <i>type</i> permite cambiar el tipo de viñeta
+
+  </p>
+  <h3>las estaciones del año</h3>
+  <ol>
+    <li>primavera</li>
+    <li>verano</li>
+    <li>invierno</li>
+    <li>otoño</li>
+  </ol>
+  <ol start="3">
+    <li>primavera</li>
+    <li>verano</li>
+    <li>invierno</li>
+    <li>otoño</li>
+  </ol>
+  <ol reversed>
+    <li>primavera</li>
+    <li>verano</li>
+    <li>invierno</li>
+    <li>otoño</li>
+  </ol>
+  <ol type="I">
+    <li>primavera</li>
+    <li>verano</li>
+    <li>invierno</li>
+    <li>otoño</li>
+  </ol>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="listasd">listas desordenadas</h2>
+  <p>
+    <b>&lt;ul&gt;</b>
+    <br>
+    <br>
+    se genera una lista con viñetas en lugar de numeracion.
+    <br>
+    Al igual que las listas ordenadas se debe usar la etiqueta &lt;li&gt; para agregar items a la lista y el atributo
+    <i>type</i> permite cambiar el estilo de las viñetas el cual puede ser <i>circle, square</i>.
+  </p>
+  <h3>listas de cosas por hacer</h3>
+  <ul>
+    <li>tarea 1</li>
+    <li>tarea 2</li>
+    <li>tarea 3</li>
+    <li>tarea 4</li>
+  </ul>
+  <ul type="circle">
+    <li>tarea 1</li>
+    <li>tarea 2</li>
+    <li>tarea 3</li>
+    <li>tarea 4</li>
+  </ul>
+  <ul type="square">
+    <li>tarea 1</li>
+    <li>tarea 2</li>
+    <li>tarea 3</li>
+    <li>tarea 4</li>
+  </ul>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="listasdef">listas de definicion</h2>
+  <p>
+    <b>&lt;dl&gt;</b> Genera una lista tipo glosario.
+    <br>
+    <b>&lt;dt&gt;</b> Se usa para agregar un termino a la lista
+    <br>
+    <b>&lt;dd&gt;</b> Se usa para agregar la definicion del termino anterior
+    <br>
+    <br>
+    Como se muestra en el ejemplo, las definiciones se generan con un espacio de tabulacion respecto al margen.
+  </p>
+  <dl>
+    <dt>HTML</dt>
+    <dd>es un lenguaje de marcado que define el contenido de la web</dd>
+    <dt>CSS</dt>
+    <dd>es un lenguaje de definicion que da estilos al codigo html</dd>
+    <dt>JavaScrip</dt>
+    <dd>es el lenguaje de la web</dd>
+  </dl>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="tablass">tablas</h2>
+  <p>
+    <b>&lt;table&gt;</b> Genera la tabla, dentro de estas etiquetas se debe organizar toda la informacion de la tabla.
+    <br>
+    las tablas se crean siguiendo patrones de filas, es decir, se genera una fila y dentro de esta se generan las celdas
+    o columnas necesarias, luego se genera otra fila y asi sucesivamente.
+    <br>
+    <br>
+    <b>&lt;tr&gt;</b> Crea una filas
+    <br>
+    <br>
+    <b>&lt;td&gt;</b> Define la celdas o columnas de la fila, dentro de estas etiquetas se escribe la informacion de
+    cada celda.
+    <br>
+    El atributo <i>colspan</i> permite definir cuantas columnas ocupa una celda
+    <br>
+    El atributo <i>rowspan</i> permite definir cuantas filas ocupa una celda
+    <br>
+    <br>
+    <b>&lt;thead&gt;</b> Da negrita a las celdas, se usa para crear la cabecera de la tabla.
+    <br>
+    <br>
+    <b>&lt;tbody&gt;</b> Define el cuerpo de la tabla en donde se ubica todo el contenido
+    <br>
+    <br>
+    <b>&lt;tfoot&gt;</b> Crea un pie de tabla en negrita
+  </p>
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td>Constelacion</td>
+      <td>Tipo</td>
+    </tr>
+    <tr>
+      <td>ikki</3td>
+      <td>Fenix</3td>
+      <td>Bronce</3td>
+    </tr>
+    <tr>
+      <td>Shina</3td>
+      <td>Ofiuco</3td>
+      <td>Plata</3td>
+    </tr>
+    <tr>
+      <td>Saga</3td>
+      <td>Geminis</3td>
+      <td>Dorado</3td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3 ">tabla de los santos de athena</th>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td>Constelacion</td>
+        <td>Tipo</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ikki</3td>
+        <td>Fenix</3td>
+        <td>Bronce</3td>
+      </tr>
+      <tr>
+        <td>mistry</3td>
+        <td>lagarto</3td>
+        <td>Plata</3td>
+      </tr>
+      <tr>
+        <td>Saga</3td>
+        <td>Geminis</3td>
+        <td>Dorado</3td>
+      </tr>
+      <tr>
+        <td>shaina</3td>
+        <td rowspan="2">ofiuco</3td>
+        <td>plata</3td>
+      </tr>
+      <tr>
+        <td>odiseo</3td>
+        <td>dorado</3td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <th colspan="3"><small>saint seiya fue creado por masami kurumada</small></th>
+    </tfoot>
+  </table>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="enlaces">enlaces</h2>
+  <p>
+    <b>&lt;a href=""&gt;</b> Genera enlaces hacia otros documentos html. Entre la etiqueta de apertura y cierre se debe
+    escribir el texto que vera el usuario
+    <br>
+    <br>
+    Para documentos dentro del proyecto se debe escribir la ruta hacia este en el parametro <i>href</i>. Ejemplo: &lt;a
+    href="hola.html"&gt;
+    <br>
+    <a href="hola.html">click para ir a la pagina hola</a>
+    <br>
+    <br>
+    Para paginas externas se debe escribir en el parametro <i>href</i> la pagina de destino con el protocolo http//: o
+    https//: segun corresponda. Ejemplo: &lt;a href="https://jonmircha.com"&gt;
+    <br>
+    <a href="https://jonmircha.com">Seguir enlace en la misma pestaña</a>
+    <br>
+    <br>
+    se puede usar el parametro <i>target="_blank"</i> para que el enlace se abra en una pestaña nueva. ejemplo: &lt;a
+    href="https://jonmircha.com" target="_blank"&gt;
+    <br>
+    <a href="https://jonmircha.com" target="_blank">Seguir el enlace en una nueva pestaña</a>
+    <br>
+    <br>
+    Se puede usar una imagen como boton para seguir al enlace. Para esto se debe insertar una imagen dentro de las
+    etiquetas &lt;a&gt; &lt;/a&gt;. Ejemplo:
+    <br>
+    &lt;a href="https://jonmircha.com" target="_blank"&gt;&lt;img
+    src="img/1.jpg" alt="nadita" width="40" height="40"&gt;&lt;a&gt;
+    <br>
+    <a href="https://jonmircha.com" target="_blank">
+      <img src="img/1.jpg" alt="nadita" width="100">
+    </a>
+  </p>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="enla2">Enlaces hacia el mismo documento</h2>
+  <p>
+    para que estos enlaces funcionen se debe poner el atributo <i>id=""</i> a cada seccion a la que se quiere poner un
+    enlace.
+    <br>
+    <br>
+    Se puede crear una lista de contenido de forma rapida haciendo uso de un atajo de emmet
+    <br>
+    ul>li*15>a este comando significa: crear 1 &lt;ul&gt;, dentr de este crear 15 &lt;li&gt; y dentro de cada uno de
+    estos crear 1 &lt;a&gt;
+    <br>
+    <br>
+    todal las etiquetas &lt;a&gt; contienen un atributo <i>href</i> en este se debe poner la ruta del documento que se
+    esta trabajando segido de <i>#</i> y seguido de el <i>id</i> de la seccion del destino y dentro de las etiquetas de
+    apertura y cierre &lt;a&gt; se escribe el texto que vera el usuario y al cual dara click para acivar el enlace.
+    Ejemplo:
+    <br>
+    &lt;a href="index.html#inicio"&gt;INICIO&lt;/a&gt;
+    <br>
+    <br>
+    Los emojis son texto plano y por lo tanto pueden ser usados directamente en el codigo sin necesidad de etiquetas.
+    Para encontrar emojos gratis se puede entrar en
+    <br>
+    <a href="https://emojipedia.org/">EMOJIPEDIA</a>
+    <br>
+    <br>
+    Para dar efecto de movimiento en el salto de seccion, en la pagina de estilos CSS se debe anotar el siguiente
+    codigo:
+    <br>
+  <pre>
+html {
+scroll-behavior: smooth;
+}
+</pre>
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="protocolosespeciales">Enlaces y protocolos especiales</h2>
+  <p>
+    sirven para abrir aplicaciones o funciones externas como marcar un numero de telefono. este tipo de enlaces funciona
+    principalmente en disposiivos moviles.
+    <br>
+    <br>
+    <b>Enlace a correo electronico</b>
+    <br>
+    Al presionar este enlace se abre la ventana de redactar correo electronico a la direccion que se determine en el
+    atributo <i>href</i> Ejemplo:
+    <br>
+    &gt;a href="mailto:adriangil189@gmail.com"&lt;enlace a correo electronico&gt;/a&lt;
+    <br>
+    <a href="mailto:adriangil189@gmail.com">enlace a correo electronico</a>
+    <br>
+    <br>
+    <b>Enlace a numero telefonico</b>
+    <br>
+    Al presionar este enlace se abre la aplicacion de telefono lista para marcar al numero escrito en el atributo
+    <i>href</i> Ejemplo:
+    <br>
+    &gt;a href="tel:3202800679"&lt;hacer llamada&gt;/a&lt;
+    <br>
+    <a href="tel:3202800679">hacer llamada</a>
+    <br>
+    <br>
+    <b>Enlace a chat de whatsapp</b>
+    <br>
+    Al presiona este enlace se abre la aplicacion whatsapp con una conversacion con el numero que se ha escrito en el
+    atributa <i>href</i> Ejemplo:
+    <br>
+    &gt;a href="https://api.whatsapp.com/send?phone=phone=3202800679&text=hola" target="_blank"&lt;enlace a
+    wpp&gt;/a&lt;
+    <br>
+    <a href="https://api.whatsapp.com/send?phone=phone=3202800679&text=hola" target="_blank">enlace a wpp</a>
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="elementosinteractivos">elementos interacticos</h2>
+  <p>
+    <b>&lt;button&gt;</b>
+    <br>
+    Genera un boton que debe ser programado mediante JavaScrip.
+    <br>
+    <button>este es un boton</button>
+    <br>
+    <br>
+    <b>&lt;details&gt;</b> Genera una estructura de acordeon, es decir, una seccion desplegable.
+    <br>
+    <b>&lt;summary&gt;</b> Genera el titulo de la estructura tipo acordeon.
+    <br>
+  <details>
+    <summary>Acordeon cerrado</summary>
+    <p>HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World
+      Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida
+      como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML
+      (application/xhtml+xml). Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión
+      definitiva de la quinta revisión del estándar se publicó en octubre de 2014.
+    </p>
+    <p>
+      Al no ser reconocido en viejas versiones de navegadores por sus nuevas etiquetas, se recomienda al usuario común
+      actualizar su navegador a la versión más nueva, para poder disfrutar de todo el potencial que provee HTML 5. El
+      desarrollo de este lenguaje de marcado es regulado por el Consorcio W3C.
+    </p>
+    <img src="img/nueva-estructura-html5.gif" alt="" width="350">
+  </details>
+  <br>
+  <details open>
+    <summary>Acordeon abierto</summary>
+    <p>HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World
+      Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida
+      como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML
+      (application/xhtml+xml). Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión
+      definitiva de la quinta revisión del estándar se publicó en octubre de 2014.
+    </p>
+    <p>
+      Al no ser reconocido en viejas versiones de navegadores por sus nuevas etiquetas, se recomienda al usuario común
+      actualizar su navegador a la versión más nueva, para poder disfrutar de todo el potencial que provee HTML 5. El
+      desarrollo de este lenguaje de marcado es regulado por el Consorcio W3C.
+    </p>
+    <img src="img/250px-HTML5_logo_and_wordmark.svg.png" alt="" width="350">
+  </details>
+  <br>
+  <br>
+  <p>
+    <b>&lt;dialog&gt;</b> Genera una ventana modal, para que se cargue abierte se debe agregar el atributo <i>open</i>
+    <br>
+    <dialog open>esto es una ventana modal</dialog>
+  </p>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="multimedia">Audio y video</h2>
+  <p>
+    En estas etiquetas no se debe poner nada entre la etiqueta de apertura y cierre, todas las modificaciones se hacen
+    con atributos.
+  </p>
+  <p>
+    <b>&lt;audio&gt;</b>
+    <br>
+    Permite poner piezas de audio en el sitio.
+    <br>
+    Se debe agregar el atributo <i>controls</i> para que el reproductor se pueda manipular.
+    <br>
+    Al agregar el atributo <i>autoplay</i> la pista se iniciara al cargar la pagina pero esto solo funciona en
+    navegadores de escritorio.
+    <br>
+    Al usar el atributo <i>loop</i> una vez se termine la pista, esta iniciara de nuevo.
+    <br>
+    Al usar el atributo <i>muted</i> el reporductor inicia muteado o con volumen en 0.
+    <br>
+    Al usar el atributo <i>preload</i> se precarga el track en el cache del navegador para tenerlo listo
+  </p>
+  <audio src="media/y2mate.com - Millon a Cero Kaleth Morales Letra.mp3" controls preload></audio>
+  <p>
+    <b>&lt;video&gt;</b>
+    <br>
+    Permite poner piezas de video en el sitio, todos los atributos utilizados para la etiqueta &lt;audio&gt; funcionan
+    para esta. Estos son: <i>controls, autoplay, loop, muted, preload</i>
+    <br>
+    Al usar el atributo <i>poster</i> se puede poner una imagen como portada del video.
+    <br>
+    Para ajustar el tamaño del video y del poster se pueden usar los mismos atributos usado en la imagenes <i>width</i>
+    y <i>height</i> aunque la forma correcta de hacerlo es mediante la hoja de estilos CSS.
+  </p>
+  <video src="media/y2mate.com - Juan Luis Guerra 440  Vale la Pena Live Video Oficial_720p.mp4" controls preload
+    poster="img/ejercicio1.jpg" width="600"></video>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="iframes">Iframes</h2>
+  <p>
+    Sirve para traer informacion especifica de otro sitio como PDF's, mapas, videos o incluso sitios completos.
+    <br>
+    <br>
+    <b>&lt;iframe&gt;</b>
+    <br>
+    El atributo <i>src</i> define la ruta o direccion de donde se importa la informacion.
+    <br>
+    El atrubuto <i>frameborder</i> define el tamaño de la margen del recuadro donde se aloja la informacion.
+    <br>
+    Para cambiar el tamaño del recuadro se usa los mismos atributos de las imagenes <i>width</i> y <i>height</i>
+    sin embargo la forma correcta de hacerlo es mediante la hoja de estilos CSS.
+  <pre>
+iframe {
+width: 80%;
+height: 400px;
+}
+    </pre>
+  <br>
+  <br>
+  ejemplos:
+  <br>
+  <br>
+  Documento del mismo proyecto.
+  <br>
+  &lt;iframe src="hola.html" frameborder="1" width="500" height="300"&gt;&lt;/iframe&gt;
+  <br>
+  <iframe src="hola.html" frameborder="1" width="500" height="300"></iframe>
+  <br>
+  <br>
+  Documento de un sitio externo
+  <br>
+  &lt;iframe src="https://jonmircha.com" frameborder="1" width="500" height="300"&gt;&lt;/iframe&gt;
+  <br>
+  <iframe src="https://jonmircha.com" frameborder="1" width="500" height="300"></iframe>
+  <br>
+  <br>
+  PDF
+  <br>
+  &lt;iframe src="media/HV Camilo Gil.pdf" frameborder="1" width="500" height="300"&gt;&lt;/iframe&gt;
+  <br>
+  <iframe src="media/HV Camilo Gil.pdf" frameborder="1" width="500" height="300"></iframe>
+  <br>
+  <br>
+  Mapas de google
+  <br>
+  Para copiar el enlace de un lugar de google maps, se selecciona el lugar, se da click en compartir, luego se da click
+  en "insertar un mapa", alli aparecera el codigo que debe ser copiado en el documento.
+  <br>
+  &lt;iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4122018353823!2d-
+  <br>
+  74.09118658590991!3d4.698230042988796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+  <br>
+  1!3m3!1m2!1s0x8e3f9b31ce6d5835%3A0x3b5b6f123d35a1e3!2sUniminuto%20Calle%2080%20
+  <br>
+  Sede%20Principal!5e0!3m2!1ses!2sco!4v1649354051383!5m2!1ses!2sco"
+  <br>
+
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"&gt;&lt;/iframe&gt;
+  <br>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4122018353823!2d-74.09118658590991!3d4.698230042988796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b31ce6d5835%3A0x3b5b6f123d35a1e3!2sUniminuto%20Calle%2080%20Sede%20Principal!5e0!3m2!1ses!2sco!4v1649354051383!5m2!1ses!2sco"
+    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br>
+  <br>
+  Video de youtube
+  <br>
+  Para conseguir el enlace a una video de youtube, se da click en compartir y luego en insertar y alli aparecera el
+  codigo html que debe ser copiado en el documento.
+  <br>
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen&gt;&lt;/iframe&gt;
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  </p>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="elementos-formularios">formularios y sus elementos</h2>
+  <h3>elementos de formularios</h3>
+  <p>
+    <b>&lt;form&gt;</b>
+    <br>
+    -dentro de estas etiquetas se escribe todo el Formulario
+    <br>
+    -el atributo <i>action</i> define la direccion a donde seenviara el formulario
+    <br>
+    -el atributo <i>method</i> define el protocolo de envio del formulario. existen dos protocolos. <b>get:</b> envia
+    los
+    valores por la URL. <b>post:</b> envia las variables de forma oculta.
+    <br>
+    -una vez enviado el formulario, en la direccion de destino se mostrara el simbolo <b>?</b> a partir de ahi se
+    muestran las variables que fueron enviadas
+    <br>
+    -si el atributo <i>action</i> no se scribe, los valor del formulario se enviaran al mismo documento de donde
+    salieron
+    <br>
+  </p>
+  <p>
+    <b>&lt;label&gt;</b>
+    <br>
+    -permite ponerle una etiqueta (nombre visible) a cada campo
+    <br>
+    -el atributo <i>for</i> sirve para vincular el label con el campo, se debe tener en cuenta que el campo debe tener
+    el atributo <i>id</i>
+    <br>
+    -los radiobutton y los checkbox deben tener un label cada uno o el formulario perdera sentido semantico
+    <br>
+    -se puede vincular el campo con su label poniendo la etiqueta &lt;input&gt; dentro de la etiqueta &lt;label&gt;.
+    Ejemplo: &lt;label&gt;&lt;input type="checkbox" namme="interese" value="deportes"&gt;Deportes&lt;/label&gt;.
+    <label>
+      <input type="checkbox" namme="interese" value="deportes">
+      Deportes
+    </label>
+  </p>
+  <p>
+    <b>&lt;input type=""&gt;</b>
+    <br>
+    permite ubicar un espacio donde el usuario inserta datos segun el atributo <i>type</i>
+  </p>
+  <table>
+    <thead><b>ATRIBUTOS TYPE</b></thead>
+    <tr>
+      <td><i>text</i></td>
+      <td><input type="text"></td>
+      <td>permite insertar texto</td>
+    </tr>
+    <tr>
+      <td><i>checkbox</i></td>
+      <td><input type="checkbox"></td>
+      <td>-crea una casilla de seleccion multiple con multiple respuesta
+        <br>
+        -para este tipo de preguntas no es necesario usar el mismo atributo <i>name</i>, tampoco es necesario poner el
+        atributo <i>id</i>
+        <br>
+        -se debe agregar el atributo <i>value</i> con el nombre de la variable que sera enviada, para este caso cada
+        opcion debe tener un <i>value</i> diferente
+        <br>
+        -para hacer que la respuesta sea obligatoria se debe poner el atributo <i>checked</i> a cada opcion, esto se usa
+        por ejemplo en casillas de terminos y condiciones.
+      </td>
+    </tr>
+    <tr>
+      <td><i>radio</i></td>
+      <td><input type="radio"></td>
+      <td>-crea una casilla deseleccion multiple con unica respuesta
+        <br>
+        -todas las opciones de la pregunta hecha con radiobutton deben tener el mismo valor en el atrivuto <i>name</i>
+        <br>
+        -cada opcion de la pregunta debe tener un &lt;label&gt;, un <i>id</i> y un <i>value</i> diferente
+        <br>
+        -para hacer que la pregunta sea requerida solo es necesario que una de las opciones tenga el atributo
+        <i>required </i>
+      </td>
+    </tr>
+    <tr>
+      <td><i>date</i></td>
+      <td><input type="date"></td>
+      <td>crea una casilla en donde se puede seleccionar una fecha</td>
+    </tr>
+    <tr>
+      <td><i>color</i></td>
+      <td><input type="color"></td>
+      <td>crea una casilla en la cual seleccionar un color RGB</td>
+    </tr>
+    <tr>
+      <td><i>button</i></td>
+      <td><input type="button" value="texto"></td>
+      <td>crea un boton que debe ser programado mediante JS, con el atributo <i>value</i> se le da texto al boton</td>
+    </tr>
+    <tr>
+      <td><i>submit</i></td>
+      <td><input type="submit"></td>
+      <td>crea un boton con el texto enviar, este boto envia el formulario a donde sea programado</td>
+    </tr>
+    <tr>
+      <td><i>reset</i></td>
+      <td><input type="reset"></td>
+      <td>crea un boton cuyo texto es restablecer, funciona para limpiar los valores de todo el formulario o asigna</td>
+    </tr>
+    <tr>
+      <td><i>file</i></td>
+      <td><input type="file"></td>
+      <td>permite al usuario cargar un archivo, al agregar el atributo <i>multiple</i> permite al usuario cargar varios
+        archivos en la misma casilla</td>
+    </tr>
+    <tr>
+      <td><i>hidden</i></td>
+      <td><input type="hidden" name="idioma" value="es"></td>
+      <td>permite al programador enviar una variable dentro del formulario que el usuario no puede ver ni modificar</td>
+    </tr>
+    <tr>
+      <td><i>email</i></td>
+      <td><input type="email"></td>
+      <td>crea una caja de texto en la que se debe escribir un email, es decir, que el texto debe incluir un @</td>
+    </tr>
+    <tr>
+      <td><i>number</i></td>
+      <td><input type="number"></td>
+      <td>crea una caja de texto en donde se deben escribir numeros</td>
+    </tr>
+    <tr>
+      <td><i>tel</i></td>
+      <td><input type="tel"></td>
+      <td>crea una caja de texto en donde se insertan numeros telefonicos</td>
+    </tr>
+    <tr>
+      <td><i>password</i></td>
+      <td><input type="password"></td>
+      <td>crea una caja de texto en donde se insertan contraseñas, no se puede ver lo que el usuario escribe</td>
+    </tr>
+    <tr>
+      <td><i>search</i></td>
+      <td><input type="search"></td>
+      <td>crea una caja de tipo buscador, es decir que en un costado tiene una X para limpiar el campo</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table>
+    <thead><b>ETIQUETAS PARA CREAR ELEMENTOS</b></thead>
+    <tr>
+      <td><b>&lt;textarea&gt;</b></td>
+      <td><textarea cols="30" rows="5"></textarea></td>
+      <td>crea una caja de comentarios a la que el programado podra definirle el tamaño</td>
+    </tr>
+    <tr>
+      <td><b>&lt;select&gt;</b></td>
+      <td><select name="" id="">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">JS</option>
+          <option value="">PHP</option>
+          <option value="">Python</option>
+        </select>
+        <select name="" id="" multiple>
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">JS</option>
+          <option value="">PHP</option>
+          <option value="">Python</option>
+        </select>
+      </td>
+      <td>-permite seleccionar una de entre varias opciones de una lista
+        <br>
+        -en la etiqueta &lt;select&gt; aparece el atributo <i>name</i> alli se escribe el nombre de la variable que
+        lleva la lista
+        <br>
+        -<b>&lt;option&gt;:</b> dentro de esta etiqueta se escribe cada una de las opciones de la lista
+        <br>
+        -si se agrega el atributo <i>multiple</i> se le permite al usuario seleccionar mas de una opcion de la lista
+        <br>
+        -dentro de las etiquetas &lt;option&gt; aparece el atributo <i>value</i> dentro de este se pone el valor de la
+        variable y entre las etiquetas se escribe lo que ve el usuario. la variable es la q se envia
+      </td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table>
+    <thead><b>ATRIBUTOS ADICIONALES</b></thead>
+    <tr>
+      <td><i>readonly</i></td>
+      <td><input type="text" readonly></td>
+      <td>no le permite al usuario modificar el contenido del campo</td>
+    </tr>
+    <tr>
+      <td><i>value</i></td>
+      <td><input type="text" value="camilo"></td>
+      <td>-le da al campo un valor predefinido por el programador
+        <br>
+        -el valor de este atributo es el que se enviara como variable
+      </td>
+    </tr>
+    <tr>
+      <td><i>disabled</i></td>
+      <td><input type="text" disabled></td>
+      <td>hace que el campo se muestre visualmente desabilitado</td>
+    </tr>
+    <tr>
+      <td><i>placeholder</i></td>
+      <td><input type="text" placeholder="holicirijirijillo"></td>
+      <td>permite poner un texto dentro del campo el cual se eliminara una vez el usuario inserte un caracter</td>
+    </tr>
+    <tr>
+      <td><i>autocomplete</i></td>
+      <td><input type="text"></td>
+      <td>permite evitar que se genere una lista de autollenado. este atributo se puede usar
+        en todo el formulario agregandolo a la etiqueta &lt;form&gt; o a cada elemento agregandolo a la etiqueta
+        &lt;input&gt;</td>
+    </tr>
+    <tr>
+      <td><i>required</i></td>
+      <td><small>este atributo se
+          <br>
+          ejemplificara en los
+          <br>
+          ejemplos de formularios
+        </small>
+      </td>
+      <td>este atributo se le da a las etiquetas &lt;input&gt; y no permite enviar el formulario hasta que el campo sea
+        llenado</td>
+    </tr>
+    <tr>
+      <td><i>pattern</i></td>
+      <td><small>
+          ejemplo de expresion regular:
+          <br>
+          ^[A-Za-z]+$
+          <br>
+          solo permite el uso de letras
+          <br>no de numeros
+        </small>
+      </td>
+      <td>para usar este atributo se deben usar expreciones regulares,
+        <br>
+        permite hacer que en el campo se utilice cierto tipo de caracteres o sierta estructura definida por el
+        programador
+        <br>
+        este atributo se usa en las etiquetas &lt;input&gt;
+      </td>
+    </tr>
+    <tr>
+      <td><i>tittle</i></td>
+      <td><small>este atributo se
+          <br>
+          ejemplificara en los
+          <br>
+          ejemplos de formularios
+        </small></td>
+      <td>da informacion al usuario de como llenar el campo en caso de que este se equivoque</td>
+    </tr>
+    <tr>
+      <td><i>selected</i></td>
+      <td><small>este atributo se
+          <br>
+          ejemplificara en los
+          <br>
+          ejemplos de formularios
+        </small>
+      </td>
+      <td>en las preguntas de seleccion multiple permite que una opcion se muestre preseleccionada al cargar la pagina
+      </td>
+    </tr>
+  </table>
+  <br>
+  <p>
+    <b>COMO ENVIAR LOS RESULTADOS DEL FORMULARIO A UN E-MAIL</b>
+    <br>
+    -se puede hacer uso de un servicio gratuito para enviar los resultados de la encuesta a una direccion de correo
+    electronico
+    <br>
+    <a href="https://formsubmit.co/">FORMSUBMIT.COM</a>
+    <br>
+    -en la etiqueta &lt;form&gt; se debe agregar el atrubuto <i>action</i> y como argumento de este atributo se pega el
+    enlace dado en el sitio de FORMSUBMIT.COM
+    <br>
+    -se debe usar el atributo <i>method="POST"</i>
+    <br>
+    -para que esto funcione la pagina debe estar en un servidor real, sin embargo, se puede intalar en Visual Studio
+    Code la extencion <b>live server</b> para emular un servidor.
+    -una vez intalada la extencion, se da click derecho en cualquier parte del codigo y luego click en <b>open with live
+      server</b>
+    <br>
+    -por ultimo se debe asegurar que todos los elementos del formulario tienen el atributo <i>name</i>
+  </p>
+  <h3>ejemplos de formularios</h3>
+  <h4>formulario de login</h4>
+  <form action="">
+    <label for="usuario">usuario</label>
+    <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" pattern="^[A-Za-z]+$"
+      title="el campo solo acepta letras" required>
+    <br>
+    <label for="password ">password</label>
+    <input type="password" name="password" id="usuario" placeholder="escribe tu contraseña" required>
+    <br>
+    <input type="submit">
+    <br>
+    <input type="reset">
+  </form>
+  <h4>selects, radios y checkbox</h4>
+  <form action="">
+    <p>elige tu idioma</p>
+    <select name="idioma" id="">
+      <option value="">elige una opcion</option>
+      <option value="en">ingles</option>
+      <option value="fr">frances</option>
+      <option value="it">italiano</option>
+      <option value="pt">portugues</option>
+      <option value="es">español</option>
+    </select>
+    <p>elige tu lenguaje de programacion favorito</p>
+    <input type="radio" name="lenguaje" id="radio-js" value="js">
+    <label for="radio-js">JavaScript</label>
+    <input type="radio" name="lenguaje" id="radio-py" value="jpy">
+    <label for="radio-py">Python</label>
+    <input type="radio" name="lenguaje" id="radio-php" value="php">
+    <label for="radio-php">PHP</label>
+    <p>elige tus intereses</p>
+    <label>
+      <input type="checkbox" namme="interese" value="deportes">
+      Deportes
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="finanzas">
+      Finanzas
+    </label>
+    <label>
+      <input type="checkbox" name="interese" value="salud">
+      Salud
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="politica">
+      Politica
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="ecologia">
+      Ecologia
+    </label>
+    <p>
+      <label>
+        <input type="checkbox" name="terminos" required>
+        ¿aceptas terminos y condiciones?
+      </label>
+    </p>
+    <input type="submit">
+    <input type="reset">
+  </form>
+  <br>
+  <h4>formulario de contacto</h4>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+      title="Nombre sólo acepta letras y espacios en blanco" required>
+    <br>
+    <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+      title="Formato de correo inválido" required>
+    <br>
+    <textarea name="comentarios" cols="30" rows="10" required></textarea>
+    <br>
+    <input type="submit">
+  </form>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+
+  <h2 id="accesivilidad">accesivilidad web</h2>
+  <p>existen atributos que se les puede dar a cada seccion con el fin de dar mas accesavilidad a usuarion con
+    limitaciones fisica</p>
+  <table>
+    <tr>
+      <td><i>role="list"</i></td>
+      <td rowspan="4">lee a la persona segun la seccion del sitio</td>
+    </tr>
+    <tr>
+      <td><i>role="itemlist"</i></td>
+    </tr>
+    <tr>
+      <td><i>role="title"</i></td>
+    </tr>
+    <tr>
+      <td><i>role="link"</i></td>
+    </tr>
+    <tr>
+      <td><i>aria-label=""</i></td>
+      <td>define un texto que va a ser leido al usuario pero no se ve</td>
+    </tr>
+    <tr>
+      <td><i>tabindex="<u>numero</u>"</i></td>
+      <td>la numeracion define el orden en que el cursor recorre la pagina al pulsar la tecla TAB</td>
+    </tr>
+  </table>
+  <p>Ejemplo:</p>
+  <ul role="list">
+    <li tabindex="1" role="listitem">Primavera</li>
+    <li tabindex="2" role="listitem">Verano</li>
+    <li tabindex="4" role="listitem">Otoño</li>
+    <li tabindex="3" role="listitem">Invierno</li>
+  </ul>
+  <a role="link" aria-label="En este enlace encontrarás más información sobre las estaciones del año" href="#"
+    target="_blank">Más información...</a>
+  <br>
+  <br>
+  <p>LINKS DE INTERES SOBRE EL TEMA</p>
+  <a href="https://web.dev/accessible/">https://web.dev/accessible/</a>
+  <br>
+  <a href="https://html5accessibility.com/">https://html5accessibility.com/</a>
+  <br>
+  <a href="https://www.w3.org/blog/news/archives/8889">https://www.w3.org/blog/news/archives/8889</a>
+  <br>
+  <a
+    href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/videos">https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/videos</a>
+  <br>
+  <a href="index.html#inicio">⏫</a>
+  <hr>
+  <h2>GRACIAS POR VISITAR ESTE SITIO</h2>
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script>
+    console.log("aqui se escribe lo que se muestra en la consola al abrir el inspector de elementos del navegador");
+  </script>
+  <script src="assets/codigos.js"></script>
+
+</body>
+
+</html>
